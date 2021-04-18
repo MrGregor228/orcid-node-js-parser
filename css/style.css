@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+/* line 5, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../scss/style.scss */
+:root {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* line 16, ../scss/style.scss */
+body {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 21, ../scss/style.scss */
+.heading {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+}
+
+/* line 27, ../scss/style.scss */
+.info-card {
+  border-radius: 10px;
+  margin: 15px;
+  padding: 15px;
+  box-shadow: 0 0 0px 1px lightgray;
+  transition: box-shadow .1s linear;
+}
+/* line 32, ../scss/style.scss */
+.info-card p {
+  margin-bottom: 10px;
+}
+/* line 35, ../scss/style.scss */
+.info-card .info-title {
+  font-weight: bold;
+}
+/* line 38, ../scss/style.scss */
+.info-card .details {
+  font-style: italic;
+  font-size: 15px;
+  color: gray;
+}
+/* line 43, ../scss/style.scss */
+.info-card:hover {
+  box-shadow: 0 0 10px 0px gray;
+}
+
+/* line 47, ../scss/style.scss */
+.card-holder {
+  display: flex;
+  box-shadow: 0 0 0px 1px lightgray;
+  transition: box-shadow .1s linear;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 992px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+}
+/* line 56, ../scss/style.scss */
+.card-holder .user-img {
+  max-width: 45%;
+  width: 100%;
+}
+/* line 59, ../scss/style.scss */
+.card-holder .user-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+/* line 67, ../scss/style.scss */
+.card-holder .user-info {
+  max-width: 55%;
+  width: 100%;
+  padding: 15px;
+}
+/* line 71, ../scss/style.scss */
+.card-holder .user-info .user-name {
+  font-size: 25px;
+  font-weight: bold;
+}
+/* line 74, ../scss/style.scss */
+.card-holder .user-info .user-name span {
+  font-weight: normal;
+}
+/* line 78, ../scss/style.scss */
+.card-holder .user-info p {
+  line-height: 1.5;
+  margin-top: 10px;
+  font-weight: bold;
+}
+/* line 82, ../scss/style.scss */
+.card-holder .user-info p span {
+  font-weight: normal;
+}
+
+/* line 88, ../scss/style.scss */
+.section {
+  border-radius: 10px;
+  box-shadow: 0 0 0px 1px lightgray;
+  transition: box-shadow .1s linear;
+  max-width: 992px;
+  margin: 15px auto 0;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+/* line 97, ../scss/style.scss */
+.section.toggled {
+  height: 52px;
+}
